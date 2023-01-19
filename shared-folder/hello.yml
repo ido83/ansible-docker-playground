@@ -1,0 +1,6 @@
+- hosts: all
+  vars: 
+  - msg: "{{P1|default('Hello World!')}}"
+  tasks:
+  - name: Print P1
+    debug: var=msg
